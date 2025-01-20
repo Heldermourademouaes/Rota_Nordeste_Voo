@@ -1,0 +1,80 @@
+//sass --watch C:\xampp\htdocs\rota-nordeste\scss:C:\xampp\htdocs\rota-nordeste\css
+
+:root {
+    --azul: #09c;
+    --branco: #fff;
+    --cinza: #f4f6f7;
+    --laranja: #fc6c36;
+
+    --transicao: 4ms;
+}
+
+#cards {
+    width: 1000px;
+    display: flex;
+    gap: 1rem;
+    margin: 16px auto;
+
+    .card {
+        width: 250px;
+        overflow: hidden;
+        border: solid 1px #ddd;
+        transition: .5s;
+        
+        img {
+            width: 250px;
+        }
+        .card-body {
+            position: relative;
+            padding: 0.5rem;
+            
+            h5 {
+                font-size: 1.3rem;
+                color: var(--laranja);
+            }
+            .origem {
+                color: #aaa;
+                padding: 0.5rem 0;
+            }
+            .modelo {
+                font-weight: 600;
+            }
+        }
+        &:hover {
+            border-color: var(--laranja);
+        }
+        .oferta {
+            background: var(--azul);
+            padding: 4px;
+            color: var(--branco);
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 4px;
+            position: absolute;
+            top: -15px;
+            right: 10px;
+        }
+    }
+}  
+.compania{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+
+    .tit-pag {
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .img {
+        display: flex;
+
+        img{
+            width: 250px;
+            transition: .5s;
+        }
+    }
+}

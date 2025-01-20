@@ -1,0 +1,123 @@
+//sass --watch C:\xampp\htdocs\rota-nordeste\scss:C:\xampp\htdocs\rota-nordeste\css
+
+:root {
+    --azul: #09c;
+    --branco: #fff;
+    --cinza: #f4f6f7;
+    --laranja: #fc6c36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 1000px;
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+
+    #logo {
+        width: 300px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        background: var(--branco);
+        margin-left: auto;
+        
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px;
+            color: var(--laranja);
+        }
+    }
+}
+
+#rotas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--azul);
+    border-bottom: 5px solid var(--laranja);
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        gap: .5rem;
+
+        label {
+            text-wrap: nowrap;
+            color: var(--branco);
+            font-weight: 600;
+        }
+        input,
+        select {
+            padding: 7px;
+            font-size: .9rem;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    background-color: var(--azul);
+    border-top: 5px solid var(--laranja);
+
+    #rodape {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+        
+        p{
+        font-size: 0.9rem;
+        color: var(--branco);
+        padding: 10px;
+        }
+    }
+}
+
+.tit-pag {
+    width: 1000px;
+    display: flex;
+    margin: 1rem auto;
+    padding: .5rem;
+    background: var(--azul);
+    color: var(--branco);
+    border-radius: .25rem;
+}
+
+// GLOBAL
+.botao {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    background: var(--laranja);
+    color: var(--branco);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    transition: .5s;
+
+    &:hover {
+        background: var(--azul);
+    }
+}

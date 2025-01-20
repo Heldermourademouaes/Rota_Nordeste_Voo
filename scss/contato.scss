@@ -1,0 +1,59 @@
+//sass --watch C:\xampp\htdocs\rota-nordeste\scss:C:\xampp\htdocs\rota-nordeste\css
+
+:root {
+    --azul: #09c;
+    --branco: #fff;
+    --cinza: #f4f6f7;
+    --laranja: #fc6c36;
+
+    --transicao: 4ms;
+}
+
+form {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem auto;
+    border: 1px solid #ddd;
+    padding: 24px 16px;
+    border-radius: 8px;
+
+    h2 {
+        color: var(--azul);
+        margin-bottom: 8px;
+    }
+    label {
+        font-size: 14px;
+        margin: 12px 0 4px 0;
+    }
+    input,
+    select,
+    textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        border-radius: 4px;
+        transition: .5s;
+
+        &:focus {
+            border: 1px solid var(--azul);
+        }
+    }
+    button {
+        margin-top: 16px;
+        padding: 8px;
+        font-size: 16px;
+        background: var(--azul);
+        border: none;
+        color: var(--branco);
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: .5s;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover {
+            background: var(--laranja);
+        }
+    }    
+}

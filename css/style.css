@@ -1,0 +1,113 @@
+:root {
+  --azul: #09c;
+  --branco: #fff;
+  --cinza: #f4f6f7;
+  --laranja: #fc6c36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 1000px;
+  display: flex;
+  padding: 1rem;
+  margin: 0 auto;
+}
+header #logo {
+  width: 300px;
+}
+header #logo img {
+  width: 300px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  background: var(--branco);
+  margin-left: auto;
+}
+header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  color: var(--laranja);
+}
+
+#rotas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--azul);
+  border-bottom: 5px solid var(--laranja);
+}
+#rotas .item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 0.5rem;
+}
+#rotas .item label {
+  text-wrap: nowrap;
+  color: var(--branco);
+  font-weight: 600;
+}
+#rotas .item input,
+#rotas .item select {
+  padding: 7px;
+  font-size: 0.9rem;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: var(--azul);
+  border-top: 5px solid var(--laranja);
+}
+footer #rodape {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+footer #rodape p {
+  font-size: 0.9rem;
+  color: var(--branco);
+  padding: 10px;
+}
+
+.tit-pag {
+  width: 1000px;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background: var(--azul);
+  color: var(--branco);
+  border-radius: 0.25rem;
+}
+
+.botao {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  background: var(--laranja);
+  color: var(--branco);
+  text-decoration: none;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.botao:hover {
+  background: var(--azul);
+}
+
+/*# sourceMappingURL=style.css.map */

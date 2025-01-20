@@ -1,0 +1,75 @@
+:root {
+  --azul: #09c;
+  --branco: #fff;
+  --cinza: #f4f6f7;
+  --laranja: #fc6c36;
+  --transicao: 4ms;
+}
+
+#cards {
+  width: 1000px;
+  display: flex;
+  gap: 1rem;
+  margin: 16px auto;
+}
+#cards .card {
+  width: 250px;
+  overflow: hidden;
+  border: solid 1px #ddd;
+  transition: 0.5s;
+}
+#cards .card img {
+  width: 250px;
+}
+#cards .card .card-body {
+  position: relative;
+  padding: 0.5rem;
+}
+#cards .card .card-body h5 {
+  font-size: 1.3rem;
+  color: var(--laranja);
+}
+#cards .card .card-body .origem {
+  color: #aaa;
+  padding: 0.5rem 0;
+}
+#cards .card .card-body .modelo {
+  font-weight: 600;
+}
+#cards .card:hover {
+  border-color: var(--laranja);
+}
+#cards .card .oferta {
+  background: var(--azul);
+  padding: 4px;
+  color: var(--branco);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.compania {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+}
+.compania .tit-pag {
+  margin-top: 0;
+  border-radius: 0;
+}
+.compania .img {
+  display: flex;
+}
+.compania .img img {
+  width: 250px;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=index.css.map */
