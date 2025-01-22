@@ -24,17 +24,34 @@ header {
   padding: 1rem;
   margin: 0 auto;
 }
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 header #logo {
+  display: flex;
   width: 300px;
 }
 header #logo img {
   width: 300px;
+}
+@media (max-width: 1000px) {
+  header #logo {
+    margin: 0 auto;
+  }
 }
 header nav {
   display: flex;
   align-items: center;
   background: var(--branco);
   margin-left: auto;
+}
+@media (max-width: 1000px) {
+  header nav {
+    margin: 16px auto 0 auto;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -45,27 +62,59 @@ header nav a {
 }
 
 #rotas {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   background-color: var(--azul);
   border-bottom: 5px solid var(--laranja);
 }
-#rotas .item {
+#rotas .conteudo {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media (max-width: 916px) {
+  #rotas .conteudo {
+    gap: 8px;
+  }
+}
+#rotas .conteudo .bloco {
+  display: flex;
+  justify-content: center;
+  background: var(--branco);
+  border-radius: 8px;
+  padding: 2px 12px;
+}
+#rotas .conteudo .bloco .item {
   display: flex;
   align-items: center;
-  padding: 15px;
-  gap: 0.5rem;
+  padding: 4px;
+  gap: 8px;
 }
-#rotas .item label {
+@media (max-width: 540px) {
+  #rotas .conteudo .bloco .item {
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+  }
+}
+#rotas .conteudo .bloco .item label {
   text-wrap: nowrap;
-  color: var(--branco);
+  color: var(--azul);
+  font-size: 14px;
   font-weight: 600;
+  padding-left: 4px;
 }
-#rotas .item input,
-#rotas .item select {
+#rotas .conteudo .bloco .item input,
+#rotas .conteudo .bloco .item select {
   padding: 7px;
   font-size: 0.9rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--azul);
 }
 
 footer {
@@ -94,6 +143,13 @@ footer #rodape p {
   background: var(--azul);
   color: var(--branco);
   border-radius: 0.25rem;
+}
+@media (max-width: 1000px) {
+  .tit-pag {
+    width: 100%;
+    border-radius: 0;
+    font-size: 1.5rem;
+  }
 }
 
 .botao {

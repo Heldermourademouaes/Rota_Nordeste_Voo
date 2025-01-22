@@ -1,4 +1,4 @@
-//sass --watch C:\xampp\htdocs\rota-nordeste\scss:C:\xampp\htdocs\rota-nordeste\css
+//sass --watch C:\xampp\htdocs\rota-nordeste\-Rota_Nordeste_Voo\scss:C:\xampp\htdocs\rota-nordeste\-Rota_Nordeste_Voo\css
 
 :root {
     --azul: #09c;
@@ -26,11 +26,20 @@ header {
     padding: 1rem;
     margin: 0 auto;
 
+    @media (max-width: 1000px){
+        width: 100%;
+        flex-direction: column;
+    }
+
     #logo {
+        display: flex;
         width: 300px;
 
         img {
             width: 300px;
+        }
+        @media (max-width: 1000px){
+            margin: 0 auto;
         }
     }
 
@@ -39,6 +48,10 @@ header {
         align-items: center;
         background: var(--branco);
         margin-left: auto;
+
+        @media (max-width: 1000px){
+            margin: 16px auto 0 auto;
+        }
         
         a {
             text-decoration: none;
@@ -51,27 +64,59 @@ header {
 }
 
 #rotas {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     background-color: var(--azul);
     border-bottom: 5px solid var(--laranja);
 
-    .item {
+    .conteudo {
+        width: 1000px;
         display: flex;
-        align-items: center;
-        padding: 15px;
-        gap: .5rem;
+        justify-content: center;
+        padding: 12px;
+        gap: 16px;
+        flex-wrap: wrap;
 
-        label {
-            text-wrap: nowrap;
-            color: var(--branco);
-            font-weight: 600;
+        @media (max-width: 916px){
+            gap: 8px;
         }
-        input,
-        select {
-            padding: 7px;
-            font-size: .9rem;
+
+        .bloco {
+            display: flex;
+            justify-content: center;
+            background: var(--branco);
+            border-radius: 8px;
+            padding: 2px 12px;
+    
+            .item {
+                display: flex;
+                align-items: center;
+                padding: 4px;
+                gap: 8px;
+
+                @media (max-width: 540px){
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 4px;
+                }
+        
+                label {
+                    text-wrap: nowrap;
+                    color: var(--azul);
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding-left: 4px;
+                }
+                input,
+                select {
+                    padding: 7px;
+                    font-size: .9rem;
+                    border-radius: 8px;
+                    outline: none;
+                    border: 1px solid var(--azul);
+                }
+            }
         }
     }
 }
@@ -104,6 +149,12 @@ footer {
     background: var(--azul);
     color: var(--branco);
     border-radius: .25rem;
+
+    @media (max-width: 1000px){
+        width: 100%;
+        border-radius: 0;
+        font-size: 1.5rem;
+    }
 }
 
 // GLOBAL

@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <title>Passagens Aéreas</title>
     
 </head>
@@ -24,31 +25,43 @@
   </header>
 
   <div id="rotas">
-    <div class="item">
-      <label for="origem">Origem:</label>
-      <select name="origem">
-        <option value="salvador">Salvador</option>
-        <option value="recife">Recife</option>
-        <option value="fortaleza">Fortaleza</option>
-        <option value="natal">Natal</option>
-      </select>
-    </div>
-    <div class="item">
-      <label for="destino">Destino:</label>
-      <select id="destino" name="destino">
-        <option value="maceio">Maceió</option>
-        <option value="joao_pessoa">João Pessoa</option>
-        <option value="aracaju">Aracaju</option>
-        <option value="terezina">Teresina</option>
-      </select>
-    </div>
-    <div class="item">
-      <label for="fname"> Data de Partida:</label>
-      <input type="date" id="fname" name="fname">
-    </div>
-    <div class="item">
-      <label for="lname">Data de Volta:</label>
-      <input type="date" id="lname" name="lname">
+    <div class="conteudo">
+      
+      <div class="bloco">
+  
+        <div class="item">
+          <label for="origem">Origem:</label>
+          <select name="origem">
+            <option value="salvador">Salvador</option>
+            <option value="recife">Recife</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="natal">Natal</option>
+          </select>
+        </div>
+        <div class="item">
+          <label for="destino">Destino:</label>
+          <select id="destino" name="destino">
+            <option value="maceio">Maceió</option>
+            <option value="joao_pessoa">João Pessoa</option>
+            <option value="aracaju">Aracaju</option>
+            <option value="terezina">Teresina</option>
+          </select>
+        </div>
+  
+      </div>
+      <div class="bloco">
+  
+        <div class="item">
+          <label for="fname"> Data de Partida:</label>
+          <input type="date" id="fname" name="fname">
+        </div>
+        <div class="item">
+          <label for="lname">Data de Volta:</label>
+          <input type="date" id="lname" name="lname">
+        </div>
+  
+      </div>
+
     </div>
   </div>
 

@@ -1,4 +1,4 @@
-//sass --watch C:\xampp\htdocs\rota-nordeste\scss:C:\xampp\htdocs\rota-nordeste\css
+//sass --watch C:\xampp\htdocs\rota-nordeste\-Rota_Nordeste_Voo\scss:C:\xampp\htdocs\rota-nordeste\-Rota_Nordeste_Voo\css
 
 :root {
     --azul: #09c;
@@ -9,20 +9,64 @@
     --transicao: 4ms;
 }
 
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: var(--laranja);
+    padding: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);
+    width: 1000px;
+    margin: 1rem auto;
+    border-radius: 4px;
+  }
+
+  .marquee-text {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(calc(100% + 520px));
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
 #cards {
     width: 1000px;
     display: flex;
     gap: 1rem;
-    margin: 16px auto;
+    margin: 0 auto 16px auto;
+
+    @media (max-width: 1000px){
+        width: 100%;
+    }
+    @media (max-width: 865px){
+        flex-wrap: wrap;
+    }
 
     .card {
         width: 250px;
         overflow: hidden;
         border: solid 1px #ddd;
         transition: .5s;
+        border-radius: 4px;
+        box-shadow: 3px 5px 10px rgba(0,0,0,.2);
+
+        @media (max-width: 1000px){
+            width: auto;
+            flex: 1 0 250px;
+        }
         
         img {
-            width: 250px;
+            width: 100%;
         }
         .card-body {
             position: relative;
@@ -65,12 +109,20 @@
     border: solid 1px #ddd;
     border-radius: 4px;
 
+    @media (max-width: 1000px){
+        width: 100%;
+    }
+
     .tit-pag {
         margin-top: 0;
         border-radius: 0;
     }
     .img {
         display: flex;
+
+        @media (max-width: 1000px){
+            flex-wrap: wrap;
+        }
 
         img{
             width: 250px;
