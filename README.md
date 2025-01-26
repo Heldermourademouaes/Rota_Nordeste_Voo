@@ -14,8 +14,6 @@ Clique no link abaixo para acessar o site publicado no GitHub Pages:
 - `destinos.html`: Página com informações sobre os destinos.
 - `contato.html`: Página de contato.
 - `css/`: Arquivos de estilo do site.
-- `js/`: Arquivos JavaScript para funcionalidades.
-
 ---
 
 Desenvolvido por [Helder Moura](https://github.com/Heldermourademouaes).
